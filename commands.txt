@@ -1,0 +1,29 @@
+#Instalar dependencias
+flutter pub get
+#Limpiar proyecto (borra build/, .dart_tool/)
+flutter clean
+#Generar codigo (freezed, json_serializable). --force-jit es necesario con Dart 3.10+ (build hooks)
+dart run build_runner build --delete-conflicting-outputs --force-jit
+#Generar codigo en modo watch
+dart run build_runner watch --delete-conflicting-outputs --force-jit
+#Analizar código estático (obligatorio antes de dar código por listo)
+flutter analyze
+#Formatear código
+dart format lib test design_system/lib
+#Correr tests
+flutter test
+#Correr tests con cobertura
+flutter test --coverage
+#Lanzar en Debug (prod / dev / mock sin red ni Firebase)
+flutter run -t lib/main.dart
+flutter run -t lib/main_dev.dart
+flutter run -t lib/main_mock.dart
+#Generar Apk debug / release
+flutter build apk -t lib/main.dart --debug
+flutter build apk -t lib/main.dart --release
+#Generar Abb release
+flutter build appbundle -t lib/main.dart --release
+#Generar IPA
+flutter build ipa -t lib/main.dart --export-method development
+#Iconos de la app
+dart run flutter_launcher_icons

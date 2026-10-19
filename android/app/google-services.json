@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "86452216926",
+    "project_id": "pokeappflutter-167ec",
+    "storage_bucket": "pokeappflutter-167ec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:86452216926:android:ccdc272f6ac0ae266480cf",
+        "android_client_info": {
+          "package_name": "com.jjh.pokeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "86452216926-c3v5a2vjphkp3qjl8imls4on9g1vjh2f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jjh.pokeapp",
+            "certificate_hash": "7f92e83c31aa28ff28b8dc35c9dee8d9a1c624f0"
+          }
+        },
+        {
+          "client_id": "86452216926-2eivi57857hfcrad5htb3b8kbdfptvvs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTZk2PTfugIwl6xe7kwognQ0tEN5tYtG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "86452216926-2eivi57857hfcrad5htb3b8kbdfptvvs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,39 @@
+name: design_system
+description: "Design System de PokeApp (tokens, theme, atoms)."
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: '>=3.4.3 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  shimmer: ^3.0.0
+  cached_network_image: ^3.3.0
+  lottie: ^3.1.0
+  logger: ^2.6.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+
+flutter:
+  uses-material-design: true
+  assets:
+    - res/images/
+    - res/lottie/
+
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: res/fonts/roboto_light.ttf
+          weight: 300
+        - asset: res/fonts/roboto_regular.ttf
+          weight: 400
+        - asset: res/fonts/roboto_bold.ttf
+          weight: 700
