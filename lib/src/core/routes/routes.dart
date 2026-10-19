@@ -1,5 +1,4 @@
-import 'dart:io';
-
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../../domain/model/data/pokemon/pokemon.dart';
@@ -37,7 +36,12 @@ class Routes {
     RouteSettings? settings,
     Widget Function(BuildContext context) predicated,
   ) {
-    if (Platform.isIOS) {
+    // `dart:io`'s `Platform` throws on web (unsupported), so platform
+    // detection goes through `defaultTargetPlatform` instead, which is
+    // web-safe. `kIsWeb` is checked first so web always gets the custom
+    // slide transition rather than whatever native platform the browser
+    // reports as the host OS.
+    if (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS) {
       return MaterialPageRoute(
         builder: (context) => predicated(context),
         settings: settings,
